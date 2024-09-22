@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Sales Pro Net</string>
+    <string name="google_sign_in">Sign in with Google</string>
+    <string name="google_sign_up">Sign up with Google</string>
+    <string name="profile_image">Profile Image\n</string>
+    <string name="fab_sync">Sync Data</string>
+
+    <string name="nav_open">Open Navigation Drawer</string>
+    <string name="nav_close">Close Navigation Drawer</string>
+    <string name="fab_description">Add new item</string>
+    <string name="user_image">User Image</string>
+    <string name="photo_desc">Photo Description</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_outlet">Add Outlet</string>
+    <string name="MAPS_API_KEY">AIzaSyD9mqSsEYP4w6vsIv5e3IqlldJeup5kua4</string>
+
+</resources>

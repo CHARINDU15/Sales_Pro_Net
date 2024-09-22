@@ -1,0 +1,293 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="8dp"
+    card_view:cardBackgroundColor="@color/apple15_green"
+    card_view:cardUseCompatPadding="true">
+
+    <!-- ScrollView to handle scrolling if content is too large -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/white">
+
+            <!-- Photo Upload Section -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp">
+
+                    <!-- ImageView to Display the Photo -->
+                    <ImageView
+                        android:id="@+id/photoImageView"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="16dp"
+                        android:contentDescription="@string/photo_desc"
+                        android:src="@drawable/placeholder_photo"
+                        android:scaleType="centerCrop" />
+
+                    <!-- Button to Capture Photo -->
+
+                    <!-- Button to Capture Photo -->
+                    <!-- Vertical Layout for Buttons -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="end">
+
+                        <!-- Button to Capture Photo -->
+                        <Button
+                            android:id="@+id/capturePhotoButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Capture Photo"
+                            android:background="@drawable/enhanced_button"
+                            android:textColor="@color/white"
+                            android:padding="12dp"
+                            android:layout_marginBottom="8dp" />
+
+                        <!-- Button to Select Photo -->
+                        <Button
+                            android:id="@+id/selectPhotoButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Select Photo"
+                            android:background="@drawable/enhanced_button"
+                            android:textColor="@color/white"
+                            android:padding="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Outlet Name -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/outletNameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Outlet Name"
+                    android:minHeight="48dp"
+                    android:padding="12dp"
+                    android:background="@drawable/enhanced_edittext"
+                    android:inputType="text" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Outlet Address -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/outletAddressInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Outlet Address"
+                    android:minHeight="48dp"
+                    android:padding="12dp"
+                    android:background="@drawable/enhanced_edittext"
+                    android:inputType="textPostalAddress" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Outlet Category -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/outletCategoryInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Category"
+                    android:minHeight="48dp"
+                    android:padding="12dp"
+                    android:background="@drawable/enhanced_edittext"
+                    android:inputType="text" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Route Selection -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/routeSelectionLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="Select Route"
+                        android:textColor="@color/textColor"
+                        android:paddingTop="8dp"
+                        android:textSize="16sp"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/routeRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="8dp"
+                        android:background="@color/white" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Contact Person Name -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/contactPersonNameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact Person Name"
+                    android:minHeight="48dp"
+                    android:padding="12dp"
+                    android:background="@drawable/enhanced_edittext"
+                    android:inputType="textPersonName" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Contact Number -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/contactNumberInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact Number"
+                    android:minHeight="48dp"
+                    android:padding="12dp"
+                    android:background="@drawable/enhanced_edittext"
+                    android:inputType="phone" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Designation -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/designationInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Designation"
+                    android:minHeight="48dp"
+                    android:padding="12dp"
+                    android:background="@drawable/enhanced_edittext"
+                    android:inputType="text" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Owners -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="8dp">
+
+                <EditText
+                    android:id="@+id/ownersInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Owners"
+                    android:minHeight="48dp"
+                    android:padding="12dp"
+                    android:background="@drawable/enhanced_edittext"
+                    android:inputType="text" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Date of Birth (Button to show DatePickerDialog) -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="8dp">
+
+                <Button
+                    android:id="@+id/selectDobButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Date of Birth"
+                    android:background="@drawable/enhanced_button"
+                    android:textColor="@color/white"
+                    android:padding="12dp" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Save Button -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                card_view:cardElevation="4dp"
+                card_view:cardCornerRadius="8dp">
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save Outlet"
+                    android:background="@drawable/enhanced_button"
+                    android:textColor="@color/white"
+                    android:padding="12dp" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

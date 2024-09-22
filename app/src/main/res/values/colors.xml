@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6F61</color>
+    <color name="colorPrimaryDark">#FF3D34</color>
+    <color name="colorAccent">#DCE35B</color>
+    <color name="background">#FFFFFF</color>
+    <color name="formBackground">#F8F8F8</color>
+    <color name="buttonBackground">#FF6F61</color>
+    <color name="buttonGoogleBackground">#4285F4</color>
+    <color name="textColor">#000000</color>
+    <color name="white">#F5F5F5</color>
+    <color name="green">#4fa853</color>
+    <color name="apple15_green">#C2CFC2</color>
+
+    <!-- Primary and Accent Colors -->
+    <color name= "bluepp">#6200EE</color>
+    <color name="ocienBlue">#3700B3</color>
+    <color name="Cycan">#03DAC5</color>
+
+    <!-- Background and Overlay -->
+    <color name="overlay_background">#66000000</color> <!-- Semi-transparent black -->
+
+    <!-- Text Colors -->
+    <color name="w">#FFFFFF</color> <!-- White text -->
+    <color name="gray">#B0BEC5</color> <!-- Light gray text -->
+
+    <!-- Shadow and Border Colors -->
+    <color name="shadowColor">#55000000</color> <!-- Semi-transparent black for shadow -->
+    <color name="borderColor">#DDDDDD</color> <!-- Light border color -->
+
+    <!-- Custom Colors -->
+    <color name="colorSuccess">#4CAF50</color> <!-- Green for success -->
+    <color name="colorError">#F44336</color> <!-- Red for error -->
+    <color name="colorWarning">#FF9800</color> <!-- Orange for warning -->
+    <!-- Primary Color -->
+    <color name="DarkGray">#1E1E1E</color> <!-- Dark Gray -->
+    <color name="b">#E1D9D9</color> <!-- Black -->
+    <color name="pink">#FF4081</color> <!-- Accent Color (Pink) -->
+
+    <!-- Background Colors -->
+    <color name="backgroundColor">#121212</color> <!-- Very Dark Gray -->
+    <color name="surfaceColor">#1E1E1E</color> <!-- Dark Gray for surfaces -->
+
+    <!-- Text Colors -->
+    <color name="textColorPrimary">#FFFFFF</color> <!-- White -->
+    <color name="textColorSecondary">#B0B0B0</color> <!-- Light Gray -->
+
+    <!-- Button and Card Colors -->
+    <color name="buttonColor">#333333</color> <!-- Darker Gray for Buttons -->
+    <color name="cardBackgroundColor">#1E1E1E</color> <!-- Same as surface color -->
+
+    <!-- Error Colors -->
+    <color name="errorColor">#B00020</color> <!-- Red for errors -->
+
+    <!-- Divider Color -->
+    <color name="dividerColor">#333333</color> <!-- Darker Gray for dividers -->
+
+    <color name="colorLightBlue">#C6E8F4</color>
+
+
+</resources>

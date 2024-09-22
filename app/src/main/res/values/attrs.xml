@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="formBackground" format="color"/>
+    <attr name="buttonBackground" format="color"/>
+    <attr name="buttonGoogleBackground" format="color"/>
+    <attr name="textColor" format="color"/>
+</resources>

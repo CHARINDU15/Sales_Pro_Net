@@ -1,0 +1,57 @@
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+<!--    <item>-->
+<!--        <shape-->
+<!--            android:shape="rectangle">-->
+<!--            <solid android:color="@android:color/black" />-->
+<!--            <corners android:radius="4dp" />-->
+<!--            <padding-->
+<!--                android:left="2dp"-->
+<!--                android:top="2dp"-->
+<!--                android:right="2dp"-->
+<!--                android:bottom="2dp" />-->
+<!--            <size-->
+<!--                android:width="wrap_content"-->
+<!--                android:height="match_parent" />-->
+<!--            <stroke-->
+<!--                android:width="1dp"-->
+<!--                android:color="@color/material_on_background_emphasis_high_type" />-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--    &lt;!&ndash; Main content layer &ndash;&gt;-->
+<!--    <item android:drawable="@android:color/transparent">-->
+<!--        <shape-->
+<!--            android:shape="rectangle">-->
+<!--            <corners android:radius="4dp" />-->
+<!--            <solid android:color="@android:color/background_dark" />-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--</layer-list>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer border layer -->
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@android:color/black" />
+            <corners android:radius="4dp" />
+            <padding
+                android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp" />
+            <stroke
+                android:width="1dp"
+                android:color="@color/material_on_background_emphasis_high_type" />
+        </shape>
+    </item>
+
+    <!-- Main content layer -->
+    <item android:drawable="@android:color/transparent">
+        <shape
+            android:shape="rectangle">
+            <corners android:radius="4dp" />
+            <solid android:color="@android:color/background_dark" />
+        </shape>
+    </item>
+</layer-list>

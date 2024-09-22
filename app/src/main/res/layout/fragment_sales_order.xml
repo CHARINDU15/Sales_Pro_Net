@@ -1,0 +1,141 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalesOrderFragment"
+    android:background="@color/white">
+
+    <!-- CardView for Total Sale -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/totalSaleCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalSaleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Sale"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/totalSaleValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0"
+                android:textSize="24dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Total Day Sale -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/totalDaySaleCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/borderColor"
+        app:layout_constraintTop_toBottomOf="@id/totalSaleCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/totalDaySaleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Day Sale"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/totalDaySaleValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$0"
+                android:textSize="24dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Toggle Button for Add Sales Order -->
+    <Button
+
+        android:id="@+id/toggleAddSalesOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Sales Order"
+        android:textSize="18sp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:background="@drawable/enhanced_button"
+        app:layout_constraintTop_toBottomOf="@id/totalDaySaleCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Toggle Button for View Sales Order -->
+    <Button
+        android:id="@+id/toggleViewSalesOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Sales Order"
+        android:textSize="18sp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:backgroundTint="@color/apple15_green"
+        android:background="@drawable/enhanced_button"
+        app:layout_constraintTop_toBottomOf="@id/toggleAddSalesOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Toggle Button for Add Immediate Sales Order -->
+    <Button
+        android:id="@+id/toggleImmediateSalesOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Immediate Sales Order"
+        android:textSize="18sp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:background="@drawable/enhanced_button"
+        app:layout_constraintTop_toBottomOf="@id/toggleViewSalesOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

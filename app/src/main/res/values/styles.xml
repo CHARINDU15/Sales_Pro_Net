@@ -1,0 +1,38 @@
+<resources>
+    <!-- Base Application Theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/background</item>
+        <item name="formBackground">@color/formBackground</item>
+        <item name="buttonBackground">@color/buttonBackground</item>
+        <item name="buttonGoogleBackground">@color/buttonGoogleBackground</item>
+        <item name="android:textColor">@color/textColor</item>
+        <!-- Set default button style here -->
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <!-- Custom Styles -->
+    <style name="CustomFormStyle">
+        <item name="android:background">?attr/formBackground</item>
+        <item name="android:textColor">?attr/textColor</item>
+        <!-- Other style properties -->
+    </style>
+
+    <style name="CustomButtonStyle">
+        <item name="android:background">?attr/buttonBackground</item>
+        <item name="android:textColor">?attr/textColor</item>
+        <!-- Other style properties -->
+    </style>
+
+    <style name="CustomGoogleButtonStyle">
+        <item name="android:background">?attr/buttonGoogleBackground</item>
+        <item name="android:textColor">?attr/textColor</item>
+        <!-- Other style properties -->
+    </style>
+
+    <style name="CButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/enhanced_button</item>
+    </style>
+</resources>

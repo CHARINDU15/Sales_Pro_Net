@@ -1,0 +1,18 @@
+<!-- res/drawable/enhanced_button.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Focused State -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/DarkGray" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+    <!-- Default State -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/apple15_green" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_fresh"
+            android:title="Fresh"
+            android:icon="@drawable/baseline_6mp_24"/>
+        <item
+            android:id="@+id/nav_Beauty"
+            android:title="Beauty"
+            android:icon="@drawable/baseline_groups_24"/>
+        <item
+            android:id="@+id/nav_furniture"
+            android:title="Furniture"
+            android:icon="@drawable/baseline_sync_24"/>
+        <item
+            android:id="@+id/bottom_cart"
+            android:title="Cart"
+            android:icon="@drawable/baseline_ac_unit_24"/>
+        <item
+            android:id="@+id/bottom_Menu"
+            android:title="Menu"
+            android:icon="@drawable/baseline_sync_24"/>
+    </group>
+</menu>
